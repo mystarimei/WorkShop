@@ -1,0 +1,44 @@
+.Selector {
+  width: 100vw;
+}
+.Selector .selectorTitle {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+}
+.Selector .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Selector .form div {
+  padding: 1rem;
+}
+.Selector .form div input {
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background-color: rgb(101, 31, 255);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+  .Selector .selectorTitle {
+    font-size: 16px;
+  }
+  .Selector .form {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 1rem;
+  }
+  .Selector .form div {
+    width: 100%;
+  }
+  .Selector .form div select {
+    width: 70%;
+  }
+  .Selector .form div input {
+    width: 90%;
+  }
+}/*# sourceMappingURL=Selector.css.map */

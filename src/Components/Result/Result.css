@@ -1,0 +1,48 @@
+.Result .resultTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  font-size: 24px;
+}
+.Result .resultTitle div {
+  padding: 0.75rem;
+  letter-spacing: 8px;
+}
+.Result .Charts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.Result .Charts .column {
+  width: 800px;
+  height: 300px;
+}
+.Result .Charts .pie {
+  margin-top: 6rem;
+  width: 800px;
+  height: 300px;
+}
+
+@media screen and (max-width: 376px) {
+  .Result .resultTitle {
+    font-size: 12px;
+  }
+  .Result .resultTitle div {
+    letter-spacing: 0;
+  }
+  .Result .Charts {
+    position: relative;
+    z-index: -2;
+  }
+  .Result .Charts .column {
+    width: 100%;
+    height: 100%;
+  }
+  .Result .Charts .pie {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=Result.css.map */

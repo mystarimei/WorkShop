@@ -1,0 +1,20 @@
+.Navbar {
+  display: flex;
+  background-color: rgb(101, 31, 255);
+  box-shadow: 0 2px rgb(182, 182, 182);
+  padding: 0.75rem;
+  justify-content: space-between;
+}
+.Navbar .navbarLogo {
+  color: aliceblue;
+}
+.Navbar .setting {
+  background-color: transparent;
+  border: 0.5px solid white;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.Navbar .setting .icon {
+  color: white;
+  font-size: 1rem;
+}/*# sourceMappingURL=Navbar.css.map */

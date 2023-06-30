@@ -1,0 +1,33 @@
+.Side {
+  position: relative;
+  .title {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -400px;
+    top: 400px;
+    font-size: 100px;
+    letter-spacing: 5rem;
+    font-weight: 1000;
+    color: transparent;
+    background-image: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      purple
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .Side {
+    .title {
+      z-index: -1;
+      opacity: 0.2;
+    }
+  }
+}
