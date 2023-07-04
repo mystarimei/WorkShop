@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Selector.css";
 import Result from "../Result/Result";
-import Loading from "../Loading";
 const url = "https://www.ris.gov.tw/rs-opendata/api/v1/datastore/ODRP019/";
 const Selector = () => {
   const [loading, setLoading] = useState(false);
@@ -86,10 +85,6 @@ const Selector = () => {
     getData();
   }, [year, city, area]);
 
-  if (loading) {
-    return <Loading />;
-  }
-
   return (
     <div className="Selector">
       <p className="selectorTitle">人口數、戶數按戶別及性別統計</p>
@@ -163,6 +158,7 @@ const Selector = () => {
           ordinary_m={ordinary_m}
           single_f={single_f}
           single_m={single_m}
+          loading={loading}
         />
       ) : (
         ""

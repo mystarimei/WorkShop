@@ -1,6 +1,7 @@
 import "./Result.css";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import Loading from "../Loading";
 const Result = ({
   year,
   city,
@@ -9,6 +10,7 @@ const Result = ({
   ordinary_m,
   single_f,
   single_m,
+  loading,
 }) => {
   const getOptions = (type) => ({
     chart: {
@@ -66,6 +68,10 @@ const Result = ({
       },
     ],
   });
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="Result">
